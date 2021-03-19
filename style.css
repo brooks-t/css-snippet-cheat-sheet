@@ -1,7 +1,76 @@
 body {
+    display: flex;
+    flex-direction: column;
     background: darkslategray;
+}
+
+header {
+    display: flex;
+    border: 1px solid chartreuse;
+    justify-content: center;
+    font-size: 32px;
+    padding: 2%;
+    margin: 10px;
 }
 
 h1 {
     color: pink;
 }
+
+.subheader {
+    display: flex;
+    border: 1px solid chartreuse;
+    justify-content: center;
+    padding: 2%;
+    text-align: center;
+    margin: 10px;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 1%;
+    border: 1px solid hotpink;
+}
+
+article {
+    border: 1px solid yellow;
+    width: 30%;
+    background-color: lightgrey;
+    margin: 1%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    border: 1px solid chartreuse;
+    margin: 10px;
+    padding: 1%;
+}
+
+/* TODO: Need to format these - took them from activity 02 */
+/* Cards are split into two columns at 992px or smaller */
+@media screen and (max-width: 992px) {
+    .card {
+      width: 50%;
+    }
+    /* Change the header color */
+    header {
+      background: #772014;
+    }
+  }
+  
+  /* Cards are stacked on top of each other at 768px or smaller */
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+    /* Change the header color */
+    header {
+      background: #8ac4ff;
+    }
+  }
